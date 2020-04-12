@@ -1,0 +1,268 @@
+.question1, .question2, .question3, .question4, .question5, .question6, .question7, .question8,
+.question9, .question10, .question11, .question12, .answer1, .answer2, .answer3, .answer4, 
+.answer5, .answer6, .answer7, .answer8,.answer9,.answer10, .answer11, .answer12 {
+	display: none;
+}
+
+.text_on_img{
+    position: absolute;
+	top: 22%;
+	color: #00315c; /* запасной цвет для старых браузеров 
+	color: rgba(255, 255, 255, 0.8);*/
+}
+
+.butt {
+  position: absolute;
+  font-weight: bold;
+  top: 65%;
+  left: 50%;
+  background-color: #fff; /* запасной цвет для старых браузеров */
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #004B8E;
+  border: 2px solid #004B8E;
+  cursor: pointer;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+@media screen and (min-width: 1100px), all and (orientation: landscape) and (min-width: 1100px) {
+ .butt {
+  position: absolute;
+  font-weight: bold;
+  top: 65%;
+  left: 50%;
+  background-color: #fff; /* запасной цвет для старых браузеров */
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #004B8E;
+  border: 2px solid #004B8E;
+  cursor: pointer;
+  border-radius: 5px;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 250%;
+}
+}
+
+@media (min-width: 1900px){
+.text_on_img{
+	font-size: 650%;
+}
+.card-title2{
+	font-size: 420%;
+}
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1900px), all and (orientation: landscape) and (min-width: 1300px)  and (max-width: 1900px) {
+.text_on_img{
+	font-size: 520%;
+}
+.card-title2{
+	font-size: 350%;
+}
+}
+
+@media (min-width: 1100px) and (max-width: 1300px){
+.text_on_img{
+	font-size: 420%;
+}
+.card-title2{
+	font-size: 300%;
+}
+}
+
+@media (min-width: 900px) and (max-width: 1100px){
+.text_on_img{
+	font-size: 350%;
+}
+.card-title2{
+	font-size: 250%;
+}
+}
+
+@media (min-width: 650px) and (max-width: 900px){
+.text_on_img{
+	font-size: 300%;
+}
+.card-title2{
+	font-size: 150%;
+}
+}
+
+@media (min-width: 470px) and (max-width: 650px){
+.text_on_img{
+	font-size: 250%;
+}
+.card-title2{
+	font-size: 100%;
+}
+}
+
+@media (min-width: 300px) and (max-width: 470px){
+.text_on_img{
+	font-size: 200%;
+}
+.card-title2{
+	font-size: 90%;
+}
+ .butt {
+  font-size: 100%;
+  border: 1px solid #004B8E;
+  padding: 2%;
+}
+}
+
+@media (max-width: 300px){
+.text_on_img{
+	font-size: 100%;
+}
+.card-title2{
+	font-size: 850%;
+}
+ .butt {
+  font-size: 100%;
+  border: 1px solid #004B8E;
+  padding: 2%;
+}
+}
+
+.butt:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: rgba(0, 75, 142, 0.7);
+  color: #FFF;
+}
+
+table{
+	width: 80%;
+    height: 80%;
+	text-align: center;
+	/* padding-left: 30%; */
+	border-left: 30px;
+}
+
+td{
+	vertical-align: top;
+}
+
+/*Кнопка для выбора пола*/
+.wrapper {
+  position: absolute;
+  left: 10%;
+  margin-top: -20px;
+  margin-left: 20%;
+}
+
+label[for="checkbox1"]{
+  display: block;
+  margin-left: 20%;
+  left: 0px;
+  top: 0;
+  position: relative;
+  width: 200px;
+  height: 40px;
+  z-index: 10;
+  line-height: 40px;
+  font-weight: bold;
+  /*background: #2a313b;*/
+  background: #e6e6e6;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+label[for="checkbox1"]:after{
+  content: "Мужчина";
+  color: #fff;
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  background: #0067c2;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+  border: 1px solid #004B8E;
+}
+
+:checked + label[for="checkbox1"]{
+  left: 0px;
+}
+
+:checked + label[for="checkbox1"]:after{
+  left: 100px;
+  background: #FC6666;
+  border: 1px solid #78150c;
+  content: "Женщина";
+}
+
+.alignment-box {
+	position: absolute;
+	top: 50%;
+	margin-top: 60px;
+	margin-left: 20%;
+}
+
+
+#checkbox1, #checkbox2, #checkbox2, #checkbox3 {
+  display: none;
+} 
+/* Кнопка да/нет*/
+label[for="checkbox2, checkbox3"]{
+  display: block;
+  margin-left: 40%;
+  margin-top: 10%;
+  left: 0px;
+  top: 0;
+  position: relative;
+  width: 140px;
+  height: 40px;
+  z-index: 10;
+  line-height: 40px;
+  font-weight: bold;
+  /*background: #2a313b;*/
+  background: #e6e6e6;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+}
+
+label[for="checkbox2, checkbox3"]:after{
+  content: "Да";
+  color: #fff;
+  width: 70px;
+  height: 40px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  display: block;
+  background: #1cd3a2;
+  -webkit-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -ms-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -o-transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 600ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  cursor: pointer;
+  border: 1px solid #0a4d3b;
+}
+
+:checked + label[for="checkbox2, checkbox3"]{
+  left: 0px;
+}
+
+:checked + label[for="checkbox2, checkbox3"]:after{
+  left: 70px;
+  background: #00bfff;
+  border: 1px solid #007399;
+  content: "Нет";
+}
