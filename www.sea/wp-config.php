@@ -23,10 +23,10 @@
 define( 'DB_NAME', 'sea' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'admin_1' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', '123_alt_123' );
 
 /** Имя сервера MySQL */
 define( 'DB_HOST', 'localhost' );
